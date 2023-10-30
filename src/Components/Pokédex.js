@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-function PokemonList() {
+function PokDex() {
     const [pokemonList, setPokemonList] = useState([]);
     const [page, setPage] = useState(1); // Current page number
     const itemsPerPage = 20;
@@ -41,8 +41,6 @@ function PokemonList() {
     function fetchPokemonData(url) {
         return fetch(url).then((response) => response.json());
     }
-
-    // This function assigns a class name based on the Pokémon type
     function getPokemonTypeClass(type) {
         switch (type) {
             case 'grass':
@@ -63,11 +61,9 @@ function PokemonList() {
                 return 'other-type';
         }
     }
-
     const handleNextPage = () => {
         setPage(page + 1);
     };
-
     const handlePreviousPage = () => {
         if (page > 1) {
             setPage(page - 1);
@@ -95,4 +91,4 @@ function PokemonList() {
     );
 }
 
-export default PokemonList;
+export default PokDex;
