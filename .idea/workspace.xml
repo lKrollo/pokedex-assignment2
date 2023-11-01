@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4253e928-d370-47a6-986a-15ef5afd2bd8" name="Changes" comment="Window with details about the pokemon can be opened">
+      <change afterPath="$PROJECT_DIR$/src/Components/modal/DataRow.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/PokemonDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/PokemonDetails.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/pokemonData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/pokemonData.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +102,7 @@
       <workItem from="1698689400245" duration="3031000" />
       <workItem from="1698780288301" duration="6372000" />
       <workItem from="1698826125940" duration="5937000" />
-      <workItem from="1698840822022" duration="1073000" />
+      <workItem from="1698840822022" duration="4956000" />
     </task>
     <task id="LOCAL-00001" summary="Show all pokémon and pagination feature added">
       <option name="closed" value="true" />
@@ -126,7 +128,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698841866363</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Window with details about the pokemon can be opened">
+      <option name="closed" value="true" />
+      <created>1698841921980</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1698841921980</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
