@@ -1,10 +1,12 @@
 import React from 'react';
-import PokDex from './Components/Pokédex';
+import PokeDex from './Components/Pokédex';
+import logo from './img/pokedexLogo.svg'
 
 function App() {
     return (
         <div>
-            <PokDex />
+            <img id="logo" src={logo} alt="Logo" />
+            <PokeDex />
         </div>
     );
 }
