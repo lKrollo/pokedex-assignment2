@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4253e928-d370-47a6-986a-15ef5afd2bd8" name="Changes" comment="CSS, logo and modulation updated">
-      <change afterPath="$PROJECT_DIR$/src/Components/PokemonDetails.js" afterDir="false" />
+    <list default="true" id="4253e928-d370-47a6-986a-15ef5afd2bd8" name="Changes" comment="Window with details about the pokemon can be opened">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Pokédex.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Pokédex.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -102,7 +100,7 @@
       <workItem from="1698689400245" duration="3031000" />
       <workItem from="1698780288301" duration="6372000" />
       <workItem from="1698826125940" duration="5937000" />
-      <workItem from="1698840822022" duration="858000" />
+      <workItem from="1698840822022" duration="1073000" />
     </task>
     <task id="LOCAL-00001" summary="Show all pokémon and pagination feature added">
       <option name="closed" value="true" />
@@ -120,7 +118,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698696468659</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Window with details about the pokemon can be opened">
+      <option name="closed" value="true" />
+      <created>1698841866363</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1698841866363</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,6 +136,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Show all pokémon and pagination feature added" />
     <MESSAGE value="CSS, logo and modulation updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="CSS, logo and modulation updated" />
+    <MESSAGE value="Window with details about the pokemon can be opened" />
+    <option name="LAST_COMMIT_MESSAGE" value="Window with details about the pokemon can be opened" />
   </component>
 </project>

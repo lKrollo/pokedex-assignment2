@@ -146,7 +146,6 @@ img {
 
 /* Add this to your CSS file or inline styles */
 .modal {
-    display: none; /* Initially hide the modal */
     position: fixed;
     top: 0;
     left: 0;
