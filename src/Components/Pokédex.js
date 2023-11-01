@@ -2,9 +2,12 @@ import React, { useState, useEffect } from 'react';
 import Pagination from './Pagination';
 import { fetchPokemonList} from '../utils/pokemonData';
 import { getPokemonType } from './TypeMapping';
+import PokemonDetails from "./PokemonDetails";
 
 function PokeDex() {
     const [pokemonList, setPokemonList] = useState([]);
+    const [selectedPokemon, setSelectedPokemon] = useState(null);
+    const [isModalOpen, setModalOpen] = useState(false);
     const [page, setPage] = useState(1);
     const itemsPerPage = 20;
 
@@ -14,7 +17,7 @@ function PokeDex() {
         setPokemonList(pokemon);
         }
         pokemonList();
-    }, [page]);
+    }, [page, itemsPerPage]);
 
     const handleNextPage = () => {
         setPage(page + 1);
@@ -24,16 +27,26 @@ function PokeDex() {
             setPage(page - 1);
         }
     };
+    const handlePokemonCardClick = (pokemon) => {
+        setSelectedPokemon(pokemon);
+        setModalOpen(true); // Open the modal when a Pokémon is clicked
+    };
+    const closeModal = () => {
+        setSelectedPokemon(null);
+        setModalOpen(false); // Close the modal
+    };
 
     return (
         <div>
-            <div id="cardsContainer">
-                {pokemonList.map((pokemon, index) => (
-                    <div key={index} className={`PokemonCard ${getPokemonType(pokemon.type)}`}>
+            <div id="cardsContainer"> {pokemonList.map((pokemon, index) => (
+                    <div id="PokemonCard"
+                         key={index}
+                         className={`PokemonCard ${getPokemonType(pokemon.type)}`}
+                         onClick={() => handlePokemonCardClick(pokemon)}
+                    >
                         <span id="id">#{pokemon.id}</span>
-                        <span id="name">{pokemon.name}</span>
+                        <span id="name" >{pokemon.name}</span>
                         <img src={pokemon.sprite} alt={pokemon.name} />
-                        <span>{pokemon.type}</span>
                     </div>
                 ))}
             </div>
@@ -42,6 +55,11 @@ function PokeDex() {
                 handlePreviousPage={handlePreviousPage}
                 handleNextPage={handleNextPage}
             />
+            {isModalOpen && (
+                <PokemonDetails
+                    pokemon={selectedPokemon}
+                    onClose={closeModal} />
+                    )}
         </div>
     );
 }
