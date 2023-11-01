@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4253e928-d370-47a6-986a-15ef5afd2bd8" name="Changes" comment="Window with details about the pokemon can be opened">
-      <change afterPath="$PROJECT_DIR$/src/Components/modal/DataRow.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/PokemonDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/PokemonDetails.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/pokemonData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/pokemonData.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,6 +102,7 @@
       <workItem from="1698780288301" duration="6372000" />
       <workItem from="1698826125940" duration="5937000" />
       <workItem from="1698840822022" duration="4956000" />
+      <workItem from="1698849388420" duration="1306000" />
     </task>
     <task id="LOCAL-00001" summary="Show all pokémon and pagination feature added">
       <option name="closed" value="true" />

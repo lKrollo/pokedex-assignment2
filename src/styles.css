@@ -166,3 +166,34 @@ img {
     width: 50%;
 }
 
+#modal-name:first-letter {
+    text-transform: uppercase;
+}
+
+td.range-slide {
+    width: 70%;
+    padding: 0;
+}
+
+.range-slide-fill {
+    position: relative;
+    height: 1px;
+    border-radius: 10px;
+    width: var(--precentage);
+}
+
+.range-slide-fill::after {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background: currentColor;
+    border-radius: 100px;
+    animation: fill 1s backwards;
+}
+
+
+

@@ -8,7 +8,7 @@ function PokemonDetails({ pokemon, onClose }) {
     return (
             <div className="modal">
                 <div className="modal-content">
-                    <span>{pokemon.name}</span>
+                    <span id="modal-name">{pokemon.name}</span>
                     <img src={pokemon.sprite} alt={pokemon.name} />
                     <span>Type: {pokemon.type}</span>
                     <span>Height: {pokemon.height} cm</span>
