@@ -30,6 +30,13 @@ div {
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.PokemonCard:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
 /* Style for Pokémon number */
@@ -142,9 +149,15 @@ img {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+    transition: transform 0.2s, filter 0.2s;
 }
 
-/* Add this to your CSS file or inline styles */
+#logo:hover {
+    transform: scale(1.2);
+    filter: brightness(1.2);
+}
+
+/* CSS for modal */
 .modal {
     position: fixed;
     top: 0;
