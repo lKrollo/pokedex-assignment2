@@ -10,11 +10,15 @@ function PokemonDetails({ pokemon, onClose }) {
             <div className="modal">
                 <div id={getPokemonType(pokemon.type)}
                      className="modal-content">
+                    <div className="Header">
                     <span id="modal-name">{pokemon.name}</span>
+                    </div>
+                    <div className="content">
+                    <span className="attribute"><p>Type: {pokemon.type}</p></span>
+                    <span className="attribute"><p>Height: {pokemon.height} cm</p></span>
+                    <span className="attribute"><p>Weight: {pokemon.weight} kg</p></span>
+                    </div>
                     <img src={pokemon.sprite} alt={pokemon.name} />
-                    <span className="attribute">Type: {pokemon.type}</span>
-                    <span className="attribute">Height: {pokemon.height} cm</span>
-                    <span className="attribute">Weight: {pokemon.weight} kg</span>
                     <>
                         <h4>Base Stats</h4>
 

@@ -9,7 +9,7 @@ function PokeDex() {
     const [selectedPokemon, setSelectedPokemon] = useState(null);
     const [isModalOpen, setModalOpen] = useState(false);
     const [page, setPage] = useState(1);
-    const itemsPerPage = 20;
+    const itemsPerPage = 16;
 
     useEffect(() => {
         async function pokemonList() {
@@ -44,8 +44,8 @@ function PokeDex() {
                          className={`PokemonCard`}
                          onClick={() => handlePokemonCardClick(pokemon)}
                     >
-                        <span id="id">#{pokemon.id}</span>
-                        <span id="name" >{pokemon.name}</span>
+                        <span id="id"><p>#{pokemon.id}</p></span>
+                        <span id="name"><p>{pokemon.name}</p></span>
                         <img src={pokemon.sprite} alt={pokemon.name} />
                     </div>
                 ))}
