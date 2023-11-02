@@ -39,9 +39,9 @@ function PokeDex() {
     return (
         <div>
             <div id="cardsContainer"> {pokemonList.map((pokemon, index) => (
-                    <div id="PokemonCard"
+                    <div id={getPokemonType(pokemon.type)}
                          key={index}
-                         className={`PokemonCard ${getPokemonType(pokemon.type)}`}
+                         className={`PokemonCard`}
                          onClick={() => handlePokemonCardClick(pokemon)}
                     >
                         <span id="id">#{pokemon.id}</span>

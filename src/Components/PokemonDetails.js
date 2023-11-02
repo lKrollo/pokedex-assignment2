@@ -1,18 +1,20 @@
 import React from 'react';
 import {formatStats} from "../utils/pokemonData";
 import Datarow from "../Components/modal/DataRow"
+import {getPokemonType} from "./TypeMapping";
 
 function PokemonDetails({ pokemon, onClose }) {
     const stats = formatStats(pokemon.stats);
 
     return (
             <div className="modal">
-                <div className="modal-content">
+                <div id={getPokemonType(pokemon.type)}
+                     className="modal-content">
                     <span id="modal-name">{pokemon.name}</span>
                     <img src={pokemon.sprite} alt={pokemon.name} />
-                    <span>Type: {pokemon.type}</span>
-                    <span>Height: {pokemon.height} cm</span>
-                    <span>Weight: {pokemon.weight} kg</span>
+                    <span className="attribute">Type: {pokemon.type}</span>
+                    <span className="attribute">Height: {pokemon.height} cm</span>
+                    <span className="attribute">Weight: {pokemon.weight} kg</span>
                     <>
                         <h4>Base Stats</h4>
 

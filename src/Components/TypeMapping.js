@@ -1,24 +1,24 @@
 const typeMap = {
-    grass: 'grass-type',
-    fire: 'fire-type',
-    water: 'water-type',
-    bug: 'bug-type',
-    poison: 'poison-type',
-    electric: 'electric-type',
-    normal: 'normal-type',
-    dark: 'dark-type',
-    dragon: 'dragon-type',
-    fairy: 'fairy-type',
-    fighting: 'fighting-type',
-    flying: 'flying-type',
-    ghost: 'ghost-type',
-    ground: 'ground-type',
-    ice: 'ice-type',
-    psychic: 'psychic-type',
-    rock: 'rock-type',
-    steel: 'steel-type',
+    grass: 'grass',
+    fire: 'fire',
+    water: 'water',
+    bug: 'bug',
+    poison: 'poison',
+    electric: 'electric',
+    normal: 'normal',
+    dark: 'dark',
+    dragon: 'dragon',
+    fairy: 'fairy',
+    fighting: 'fighting',
+    flying: 'flying',
+    ghost: 'ghost',
+    ground: 'ground',
+    ice: 'ice',
+    psychic: 'psychic',
+    rock: 'rock',
+    steel: 'steel',
 };
 
 export function getPokemonType(type) {
-    return typeMap[type] || 'other-type';
+    return typeMap[type] || 'other';
 }
