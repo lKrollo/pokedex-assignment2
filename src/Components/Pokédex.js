@@ -4,7 +4,8 @@ import { fetchPokemonList} from '../utils/pokemonData';
 import { getPokemonType } from './TypeMapping';
 import PokemonDetails from "./PokemonDetails";
 
-function PokeDex() {
+
+export default function PokeDex() {
     const [pokemonList, setPokemonList] = useState([]);
     const [selectedPokemon, setSelectedPokemon] = useState(null);
     const [isModalOpen, setModalOpen] = useState(false);
@@ -64,4 +65,3 @@ function PokeDex() {
     );
 }
 
-export default PokeDex;

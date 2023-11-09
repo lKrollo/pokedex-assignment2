@@ -2,7 +2,7 @@ import React from 'react';
 import PokeDex from './Components/Pokédex';
 import logo from './img/logo.png';
 
-function App() {
+export default function App() {
     return (
         <div className="page">
             <div className="centeredContainer">
@@ -13,4 +13,3 @@ function App() {
     );
 }
 
-export default App;
